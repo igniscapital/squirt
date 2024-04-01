@@ -59,6 +59,7 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { PlasmicHead } from "@plasmicapp/react-web";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 
 import { useScreenVariants as useScreenVariantswcgr3SdHclm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _WCGR3sdHclm/globalVariant
@@ -81,6 +82,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   columns?: Flex__<"div">;
   h3?: Flex__<"h3">;
 };
@@ -147,6 +149,17 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <PlasmicHead
+            data-plasmic-name={"pageMetadataOverride"}
+            data-plasmic-override={overrides.pageMetadataOverride}
+            className={classNames("__wab_instance", sty.pageMetadataOverride)}
+            description={
+              "Legend has it that Squirtie was born under a brilliant star, destined for greatness from the moment he emerged from his eggshell. Raised among the gentle waves of the Cerulean Sea, Squirtie was quickly recognized for his indomitable spirit and adventurous nature."
+            }
+            image={"/plasmic/squirt/images/squirtieCoinTransparentpng.png"}
+            title={"SquirtieBASE"}
+          />
+
           <Stack__
             as={"div"}
             hasGap={true}
@@ -703,6 +716,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.link__gtVEt
                 )}
                 component={Link}
+                href={
+                  "https://twitter.com/squirtiebase?s=21&t=l4jzQjAGJyHp0hSM4Zy0Zg"
+                }
                 platform={"nextjs"}
               >
                 <PlasmicImg__
@@ -732,7 +748,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "columns", "h3"],
+  root: ["root", "pageMetadataOverride", "columns", "h3"],
+  pageMetadataOverride: ["pageMetadataOverride"],
   columns: ["columns", "h3"],
   h3: ["h3"]
 } as const;
@@ -741,6 +758,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  pageMetadataOverride: typeof PlasmicHead;
   columns: "div";
   h3: "h3";
 };
@@ -805,6 +823,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     columns: makeNodeComponent("columns"),
     h3: makeNodeComponent("h3"),
 
