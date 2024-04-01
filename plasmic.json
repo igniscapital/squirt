@@ -107,10 +107,40 @@
           "id": "k0UOCwY4YbUQ",
           "name": "squirtie_coin.png",
           "filePath": "../public/plasmic/squirt/images/squirtieCoinpng.png"
+        },
+        {
+          "id": "f_4hCEO1tJxR",
+          "name": "website_title.png",
+          "filePath": "../public/plasmic/squirt/images/websiteTitlepng.png"
+        },
+        {
+          "id": "pGLEYfbIbN9o",
+          "name": "website_banner.png",
+          "filePath": "../public/plasmic/squirt/images/websiteBannerpng.png"
+        },
+        {
+          "id": "5CFC013nIt8Z",
+          "name": "website_header.png",
+          "filePath": "../public/plasmic/squirt/images/websiteHeaderpng.png"
+        },
+        {
+          "id": "3U0qmTrH1lC2",
+          "name": "website_telegram.png",
+          "filePath": "../public/plasmic/squirt/images/websiteTelegrampng.png"
+        },
+        {
+          "id": "SXTUhMMBxKdr",
+          "name": "website_twitter.png",
+          "filePath": "../public/plasmic/squirt/images/websiteTwitterpng.png"
+        },
+        {
+          "id": "F3sBzkL9zc9E",
+          "name": "squirtie_coin_transparent.png",
+          "filePath": "../public/plasmic/squirt/images/squirtieCoinTransparentpng.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/squirt/PlasmicGlobalContextsProvider.tsx",
       "splitsProviderFilePath": "",
       "codeComponents": [
         {
@@ -124,6 +154,28 @@
           "name": "Fetcher",
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    },
+    {
+      "projectId": "8PtdGodUbexNYgkuyBUcWu",
+      "projectApiToken": "34o5R5KswluuZ4sD83F88oQrcLWsNNeUpCptQ8Okf4hYqgjnHnX2idGAlhtB7WWQQelNAInf5XFazR1cGw",
+      "projectName": "plasmic-embed-css",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_embed_css/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/plasmic_embed_css/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "qF0uJxFztB",
+          "name": "EmbedCss",
+          "displayName": "global-embed-css",
+          "componentImportPath": "@plasmicpkgs/plasmic-embed-css"
         }
       ],
       "customFunctions": []

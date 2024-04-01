@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=VT323%3Aital%2Cwght%400%2C400&family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata%3Aital%2Cwght%400%2C400%3B0%2C600%3B0%2C700&display=swap");
 
 .plasmic_tokens {
   --plsmc-standard-width: 800px;
@@ -11,7 +11,6 @@
 }
 
 .plasmic_default_styles {
-  --mixin-hNR5qc-0BjAC_font-family: "VT323";
   --mixin-hNR5qc-0BjAC_font-size: 16px;
   --mixin-hNR5qc-0BjAC_font-weight: 400;
   --mixin-hNR5qc-0BjAC_font-style: normal;
@@ -24,6 +23,7 @@
   --mixin-hNR5qc-0BjAC_user-select: text;
   --mixin-hNR5qc-0BjAC_text-decoration-line: none;
   --mixin-hNR5qc-0BjAC_text-overflow: clip;
+  --mixin-hNR5qc-0BjAC_font-family: "upheavtt";
   --mixin-kYyzDCYLrGvF_color: #000000;
   --mixin-kYyzDCYLrGvF_font-weight: 700;
   --mixin-kYyzDCYLrGvF_font-size: 64px;

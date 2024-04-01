@@ -81,8 +81,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
-  h1?: Flex__<"h1">;
-  columns?: Flex__<"div">;
   h3?: Flex__<"h3">;
 };
 
@@ -148,13 +146,71 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
+          <Stack__
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__dRitx)}
+          >
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__u1N65
+              )}
+              component={Link}
+              href={"https://www.plasmic.app/"}
+              platform={"nextjs"}
+            >
+              {"Home"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__tijwA
+              )}
+              component={Link}
+              href={"#lore"}
+              platform={"nextjs"}
+            >
+              {"Lore"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link___0Jk6A
+              )}
+              component={Link}
+              href={"#tokenomics"}
+              platform={"nextjs"}
+            >
+              {"Tokenomics"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link___3Azey
+              )}
+              component={Link}
+              href={"roadmap"}
+              platform={"nextjs"}
+            >
+              {"Roadmap"}
+            </PlasmicLink__>
+          </Stack__>
           <section className={classNames(projectcss.all, sty.section__d7N70)}>
             <PlasmicImg__
               alt={""}
               className={classNames(sty.img__hRr9X)}
               displayHeight={
                 hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "100%"
+                  ? "auto"
                   : "auto"
               }
               displayMaxHeight={"none"}
@@ -164,9 +220,9 @@ function PlasmicHomepage__RenderFunc(props: {
               displayWidth={"100%"}
               loading={"lazy"}
               src={{
-                src: "/plasmic/squirt/images/bannerEditpng.png",
-                fullWidth: 1920,
-                fullHeight: 1080,
+                src: "/plasmic/squirt/images/websiteBannerpng.png",
+                fullWidth: 2250,
+                fullHeight: 940,
                 aspectRatio: undefined
               }}
             />
@@ -183,28 +239,29 @@ function PlasmicHomepage__RenderFunc(props: {
                 displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/squirt/images/squirtieBannerLogopng.png",
-                  fullWidth: 1425,
-                  fullHeight: 382,
+                  src: "/plasmic/squirt/images/websiteTitlepng.png",
+                  fullWidth: 1320,
+                  fullHeight: 380,
                   aspectRatio: undefined
                 }}
               />
 
-              <h1
-                data-plasmic-name={"h1"}
-                data-plasmic-override={overrides.h1}
+              <h2
                 className={classNames(
                   projectcss.all,
-                  projectcss.h1,
+                  projectcss.h2,
                   projectcss.__wab_text,
-                  sty.h1
+                  sty.h2__r5U5P
                 )}
               >
                 {"Guardian of the BASE Blockchain"}
-              </h1>
+              </h2>
             </div>
           </section>
-          <section className={classNames(projectcss.all, sty.section___7Fs1A)}>
+          <section
+            className={classNames(projectcss.all, sty.section___7Fs1A)}
+            id={"lore"}
+          >
             <Stack__
               as={"div"}
               hasGap={true}
@@ -378,12 +435,21 @@ function PlasmicHomepage__RenderFunc(props: {
               </Reveal>
             </Stack__>
           </section>
-          <section className={classNames(projectcss.all, sty.section___0Nf4X)}>
-            <div
-              data-plasmic-name={"columns"}
-              data-plasmic-override={overrides.columns}
-              className={classNames(projectcss.all, sty.columns)}
+          <section
+            className={classNames(projectcss.all, sty.section___0Nf4X)}
+            id={"tokenomics"}
+          >
+            <h2
+              className={classNames(
+                projectcss.all,
+                projectcss.h2,
+                projectcss.__wab_text,
+                sty.h2___8GXZb
+              )}
             >
+              {"TOKENOMICS"}
+            </h2>
+            <div className={classNames(projectcss.all, sty.columns__mrR6Q)}>
               <div className={classNames(projectcss.all, sty.column__qAb7Z)}>
                 <PlasmicImg__
                   alt={""}
@@ -396,14 +462,24 @@ function PlasmicHomepage__RenderFunc(props: {
                   displayWidth={"400px"}
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/squirt/images/squirtieCoinpng.png",
-                    fullWidth: 960,
-                    fullHeight: 960,
+                    src: "/plasmic/squirt/images/squirtieCoinTransparentpng.png",
+                    fullWidth: 336,
+                    fullHeight: 336,
                     aspectRatio: undefined
                   }}
                 />
               </div>
               <div className={classNames(projectcss.all, sty.column__shN8Y)}>
+                <h2
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h2,
+                    projectcss.__wab_text,
+                    sty.h2__u4MsN
+                  )}
+                >
+                  {"1,000,000,000 "}
+                </h2>
                 <h3
                   data-plasmic-name={"h3"}
                   data-plasmic-override={overrides.h3}
@@ -415,11 +491,91 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {
-                    "-Tokenomics: 1,000,000,000 0% Tax. \n45% LP\n45% Airdrop \n10% Marketing/KOL/CEX \n-Socials: @squirtiebase \n-Roadmap (maybe make a land)\n\nPresale \nLaunch\nCEX\nMarketing \n\nPhase 2: \nTOP HOLDERS will be air dropped a Squirtie EGG NFT\n"
+                    "0% Tax. \n45% LP\n45% Airdrop \n10% Marketing/KOL/CEX \n\nCONTRACT ADDRESS :\n0x8123u9ie8uwqe09qwe908q098ewq09we\n"
                   }
                 </h3>
               </div>
             </div>
+          </section>
+          <section
+            className={classNames(projectcss.all, sty.section___8LqUt)}
+            id={"roadmap"}
+          >
+            <h2
+              className={classNames(
+                projectcss.all,
+                projectcss.h2,
+                projectcss.__wab_text,
+                sty.h2__v5Bav
+              )}
+            >
+              {"Roadmap"}
+            </h2>
+            <div className={classNames(projectcss.all, sty.columns__xkc5V)}>
+              <div className={classNames(projectcss.all, sty.column__eeecV)} />
+            </div>
+          </section>
+          <section className={classNames(projectcss.all, sty.section__eqDjH)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__xPYdC)}
+            >
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__sc15F
+                )}
+                component={Link}
+                platform={"nextjs"}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__vq9)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/squirt/images/websiteTelegrampng.png",
+                    fullWidth: 72,
+                    fullHeight: 52,
+                    aspectRatio: undefined
+                  }}
+                />
+              </PlasmicLink__>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  sty.link__gtVEt
+                )}
+                component={Link}
+                platform={"nextjs"}
+              >
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__je5P3)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/squirt/images/websiteTwitterpng.png",
+                    fullWidth: 72,
+                    fullHeight: 52,
+                    aspectRatio: undefined
+                  }}
+                />
+              </PlasmicLink__>
+            </Stack__>
           </section>
         </div>
       </div>
@@ -428,9 +584,7 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1", "columns", "h3"],
-  h1: ["h1"],
-  columns: ["columns", "h3"],
+  root: ["root", "h3"],
   h3: ["h3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -438,8 +592,6 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  h1: "h1";
-  columns: "div";
   h3: "h3";
 };
 
@@ -503,8 +655,6 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    h1: makeNodeComponent("h1"),
-    columns: makeNodeComponent("columns"),
     h3: makeNodeComponent("h3"),
 
     // Metadata about props expected for PlasmicHomepage
