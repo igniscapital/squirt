@@ -441,15 +441,6 @@
     margin-top: 24px;
   }
 }
-.img__pBwF {
-  position: relative;
-  object-fit: cover;
-  max-width: 300px;
-  height: 300px;
-}
-.img__pBwF > picture > img {
-  object-fit: cover;
-}
 .text__lxkTi {
   width: 100%;
   height: auto;
@@ -463,6 +454,15 @@
   .text__lxkTi {
     text-align: left;
   }
+}
+.img__pBwF {
+  position: relative;
+  object-fit: cover;
+  max-width: 300px;
+  height: 300px;
+}
+.img__pBwF > picture > img {
+  object-fit: cover;
 }
 .columns__tsqnc {
   display: flex;

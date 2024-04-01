@@ -274,6 +274,17 @@ function PlasmicHomepage__RenderFunc(props: {
                     hasGap={true}
                     className={classNames(projectcss.all, sty.freeBox__lEo3)}
                   >
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__lxkTi
+                      )}
+                    >
+                      {
+                        "As Squirtie grew older, he joined the notorious Squirtle Squad, a group of brave noblemons dedicated to protecting the shores of their homeland. Together, they faced countless challenges and adversaries, forging bonds of friendship that would withstand the test of time."
+                      }
+                    </div>
                     <PlasmicImg__
                       alt={""}
                       className={classNames(sty.img__pBwF)}
@@ -291,18 +302,6 @@ function PlasmicHomepage__RenderFunc(props: {
                         aspectRatio: undefined
                       }}
                     />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__lxkTi
-                      )}
-                    >
-                      {
-                        "As Squirtie grew older, he joined the notorious Squirtle Squad, a group of brave noblemons dedicated to protecting the shores of their homeland. Together, they faced countless challenges and adversaries, forging bonds of friendship that would withstand the test of time."
-                      }
-                    </div>
                   </Stack__>
                 </Reveal>
               </div>
