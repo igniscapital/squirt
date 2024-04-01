@@ -35,9 +35,11 @@
   position: relative;
   flex-direction: row;
   width: 100%;
-  height: 75px;
-  max-width: 100%;
-  background: url("/plasmic/squirt/images/websiteHeaderpng.png") 0% 0% / contain no-repeat;
+  height: 70px;
+  max-width: 1024px;
+  background: url("/plasmic/squirt/images/websiteHeader1Png.png") 0% 0% / contain no-repeat;
+  margin-top: 42px;
+  z-index: 200;
   min-width: 0;
   padding: 8px;
 }
@@ -142,39 +144,6 @@
   grid-column-end: -1 !important;
   padding: 32px 24px 0px;
 }
-.img__lPcmO {
-  position: absolute;
-  object-fit: cover;
-  max-width: 100%;
-  left: 100px;
-  top: 50px;
-  width: 400px;
-}
-.img__lPcmO > picture > img {
-  object-fit: cover;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .img__lPcmO {
-    display: none !important;
-  }
-}
-.img___2Eik9 {
-  position: absolute;
-  object-fit: cover;
-  max-width: 100%;
-  left: auto;
-  top: 0px;
-  width: 400px;
-  right: 50px;
-}
-.img___2Eik9 > picture > img {
-  object-fit: cover;
-}
-@media (min-width: 0px) and (max-width: 768px) {
-  .img___2Eik9 {
-    display: none !important;
-  }
-}
 .img__xe6Vl {
   position: relative;
   object-fit: cover;
@@ -183,17 +152,10 @@
 .img__xe6Vl > picture > img {
   object-fit: cover;
 }
-.h2__r5U5P {
-  position: relative;
-  width: 100%;
-  height: auto;
+.embedHtml:global(.__wab_instance) {
   max-width: 100%;
-  text-align: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  font-size: 42px;
-  font-family: "upheavtt";
-  min-width: 0;
+  object-fit: cover;
+  position: relative;
 }
 .freeBox__uZwjx {
   display: flex;

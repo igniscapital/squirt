@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { PlasmicHead } from "@plasmicapp/react-web";
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 
 import { useScreenVariants as useScreenVariantswcgr3SdHclm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _WCGR3sdHclm/globalVariant
@@ -83,6 +84,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   pageMetadataOverride?: Flex__<typeof PlasmicHead>;
+  embedHtml?: Flex__<typeof Embed>;
   columns?: Flex__<"div">;
   h3?: Flex__<"h3">;
 };
@@ -234,50 +236,14 @@ function PlasmicHomepage__RenderFunc(props: {
               displayWidth={"100%"}
               loading={"lazy"}
               src={{
-                src: "/plasmic/squirt/images/websiteBannerpng.png",
-                fullWidth: 2250,
-                fullHeight: 940,
+                src: "/plasmic/squirt/images/websiteBanner2Png.png",
+                fullWidth: 2240,
+                fullHeight: 1240,
                 aspectRatio: undefined
               }}
             />
 
             <div className={classNames(projectcss.all, sty.freeBox__xNJcW)}>
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img__lPcmO)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"400px"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/squirt/images/websiteCloudpng.png",
-                  fullWidth: 1350,
-                  fullHeight: 290,
-                  aspectRatio: undefined
-                }}
-              />
-
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img___2Eik9)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"400px"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/squirt/images/websiteCloudpng.png",
-                  fullWidth: 1350,
-                  fullHeight: 290,
-                  aspectRatio: undefined
-                }}
-              />
-
               <PlasmicImg__
                 alt={"the legend of Squirtie"}
                 className={classNames(sty.img__xe6Vl)}
@@ -296,16 +262,15 @@ function PlasmicHomepage__RenderFunc(props: {
                 }}
               />
 
-              <h2
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h2,
-                  projectcss.__wab_text,
-                  sty.h2__r5U5P
-                )}
-              >
-                {"Guardian of the BASE Blockchain"}
-              </h2>
+              <Embed
+                data-plasmic-name={"embedHtml"}
+                data-plasmic-override={overrides.embedHtml}
+                className={classNames("__wab_instance", sty.embedHtml)}
+                code={
+                  "<style>\n@supports (-webkit-text-stroke: 1px black) {\n  h1 {\n  font-size: 40px;\n  color: black;\n  -webkit-text-fill-color: black; /* Will override color (regardless of order) */\n  -webkit-text-stroke-width: 1px;\n  -webkit-text-stroke-color: white;\n}\n</style>\n<h1>Guardian of the BASE Blockchain</h1>"
+                }
+              />
+
               <div className={classNames(projectcss.all, sty.freeBox__uZwjx)}>
                 <PlasmicImg__
                   alt={""}
@@ -804,8 +769,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "pageMetadataOverride", "columns", "h3"],
+  root: ["root", "pageMetadataOverride", "embedHtml", "columns", "h3"],
   pageMetadataOverride: ["pageMetadataOverride"],
+  embedHtml: ["embedHtml"],
   columns: ["columns", "h3"],
   h3: ["h3"]
 } as const;
@@ -815,6 +781,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
+  embedHtml: typeof Embed;
   columns: "div";
   h3: "h3";
 };
@@ -880,6 +847,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
+    embedHtml: makeNodeComponent("embedHtml"),
     columns: makeNodeComponent("columns"),
     h3: makeNodeComponent("h3"),
 
