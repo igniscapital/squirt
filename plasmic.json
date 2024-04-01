@@ -167,6 +167,16 @@
           "id": "K9zxu_uxma5G",
           "name": "island 3.png",
           "filePath": "../public/plasmic/squirt/images/island3Png.png"
+        },
+        {
+          "id": "mivNdUhguAKT",
+          "name": "website_separator (1).png",
+          "filePath": "../public/plasmic/squirt/images/websiteSeparator1Png.png"
+        },
+        {
+          "id": "su2x4CEmNOIV",
+          "name": "squirtie_surfing.gif",
+          "filePath": "../public/plasmic/squirt/images/squirtieSurfinggif.gif"
         }
       ],
       "indirect": false,

@@ -257,6 +257,25 @@ function PlasmicHomepage__RenderFunc(props: {
               >
                 {"Guardian of the BASE Blockchain"}
               </h2>
+              <div className={classNames(projectcss.all, sty.freeBox__uZwjx)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__wSjXo)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"250px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/squirt/images/squirtieSurfinggif.gif",
+                    fullWidth: 550,
+                    fullHeight: 440,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
             </div>
           </section>
           <section
@@ -462,7 +481,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/squirt/images/websiteSeparatorpng.png",
+                  src: "/plasmic/squirt/images/websiteSeparator1Png.png",
                   fullWidth: 1024,
                   fullHeight: 88,
                   aspectRatio: undefined
@@ -547,7 +566,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/squirt/images/websiteSeparatorpng.png",
+                  src: "/plasmic/squirt/images/websiteSeparator1Png.png",
                   fullWidth: 1024,
                   fullHeight: 88,
                   aspectRatio: undefined
