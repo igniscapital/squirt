@@ -717,7 +717,7 @@ function PlasmicHomepage__RenderFunc(props: {
               displayHeight={
                 hasVariant(globalVariants, "screen", "mobileOnly")
                   ? "auto"
-                  : "auto"
+                  : "100%"
               }
               displayMaxHeight={"none"}
               displayMaxWidth={"100%"}
