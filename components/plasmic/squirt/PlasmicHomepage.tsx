@@ -81,6 +81,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  columns?: Flex__<"div">;
   h3?: Flex__<"h3">;
 };
 
@@ -470,8 +471,10 @@ function PlasmicHomepage__RenderFunc(props: {
             </div>
             <Stack__
               as={"div"}
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
               hasGap={true}
-              className={classNames(projectcss.all, sty.columns__mrR6Q)}
+              className={classNames(projectcss.all, sty.columns)}
             >
               <div className={classNames(projectcss.all, sty.column__qAb7Z)}>
                 <PlasmicImg__
@@ -493,9 +496,9 @@ function PlasmicHomepage__RenderFunc(props: {
                   }
                   loading={"lazy"}
                   src={{
-                    src: "/plasmic/squirt/images/squirtieCoinTransparentpng.png",
-                    fullWidth: 336,
-                    fullHeight: 336,
+                    src: "/plasmic/squirt/images/squirtieCoinspingif.gif",
+                    fullWidth: 880,
+                    fullHeight: 880,
                     aspectRatio: undefined
                   }}
                 />
@@ -562,8 +565,83 @@ function PlasmicHomepage__RenderFunc(props: {
                 {"Roadmap"}
               </h2>
             </div>
-            <div className={classNames(projectcss.all, sty.columns__xkc5V)}>
-              <div className={classNames(projectcss.all, sty.column__eeecV)} />
+            <div className={classNames(projectcss.all, sty.freeBox__yrv0A)}>
+              <div className={classNames(projectcss.all, sty.freeBox__kdiq6)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__jvf96)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"300px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/squirt/images/island1Png.png",
+                    fullWidth: 552,
+                    fullHeight: 352,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox___5G8Gu)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__pkc9B)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"300px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/squirt/images/island2Png.png",
+                    fullWidth: 552,
+                    fullHeight: 352,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__n08Oq)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img___8ErXk)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"300px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/squirt/images/island4Png.png",
+                    fullWidth: 552,
+                    fullHeight: 352,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+              <div className={classNames(projectcss.all, sty.freeBox__wk4FP)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__syQS)}
+                  displayHeight={"auto"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"300px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/squirt/images/island3Png.png",
+                    fullWidth: 552,
+                    fullHeight: 352,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
             </div>
           </section>
           <section className={classNames(projectcss.all, sty.section__eqDjH)}>
@@ -635,7 +713,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h3"],
+  root: ["root", "columns", "h3"],
+  columns: ["columns", "h3"],
   h3: ["h3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -643,6 +722,7 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  columns: "div";
   h3: "h3";
 };
 
@@ -706,6 +786,7 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    columns: makeNodeComponent("columns"),
     h3: makeNodeComponent("h3"),
 
     // Metadata about props expected for PlasmicHomepage

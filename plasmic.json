@@ -142,6 +142,31 @@
           "id": "KEFLNoFAXV9q",
           "name": "website_separator.png",
           "filePath": "../public/plasmic/squirt/images/websiteSeparatorpng.png"
+        },
+        {
+          "id": "kSLhM2UQ65iA",
+          "name": "squirtie_coinspin.gif",
+          "filePath": "../public/plasmic/squirt/images/squirtieCoinspingif.gif"
+        },
+        {
+          "id": "V-hyLvOBOF7H",
+          "name": "island 1.png",
+          "filePath": "../public/plasmic/squirt/images/island1Png.png"
+        },
+        {
+          "id": "2I3WeOLCtSoQ",
+          "name": "island 4.png",
+          "filePath": "../public/plasmic/squirt/images/island4Png.png"
+        },
+        {
+          "id": "TeicHPCLJeel",
+          "name": "island 2.png",
+          "filePath": "../public/plasmic/squirt/images/island2Png.png"
+        },
+        {
+          "id": "K9zxu_uxma5G",
+          "name": "island 3.png",
+          "filePath": "../public/plasmic/squirt/images/island3Png.png"
         }
       ],
       "indirect": false,
