@@ -82,6 +82,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   h1?: Flex__<"h1">;
+  columns?: Flex__<"div">;
   h3?: Flex__<"h3">;
 };
 
@@ -207,176 +208,161 @@ function PlasmicHomepage__RenderFunc(props: {
             <Stack__
               as={"div"}
               hasGap={true}
-              className={classNames(projectcss.all, sty.columns__k64Zc)}
+              className={classNames(projectcss.all, sty.freeBox___98Sx)}
             >
-              <div className={classNames(projectcss.all, sty.column__pfwj)}>
-                <Reveal
-                  cascade={false}
-                  className={classNames("__wab_instance", sty.reveal__qfzMw)}
-                  direction={"left"}
-                  effect={"fade"}
-                  triggerOnce={true}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__ePiPs)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__vuG7)}
-                      displayHeight={"300px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"300px"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/squirt/images/squirtieHatchgif.gif",
-                        fullWidth: 880,
-                        fullHeight: 880,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___3ByFy
-                      )}
-                    >
-                      {
-                        "Legend has it that Squirtie was born under a brilliant star, destined for greatness from the moment he emerged from his eggshell. Raised among the gentle waves of the Cerulean Sea, Squirtie was quickly recognized for his indomitable spirit and adventurous nature."
-                      }
-                    </div>
-                  </Stack__>
-                </Reveal>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__mAaky)} />
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__w7KaL)}
-            >
-              <div className={classNames(projectcss.all, sty.column__t6NwV)} />
-
-              <div className={classNames(projectcss.all, sty.column__qBuLg)}>
-                <Reveal
-                  className={classNames("__wab_instance", sty.reveal__aywZ)}
-                  direction={"right"}
-                  triggerOnce={true}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__lEo3)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__lxkTi
-                      )}
-                    >
-                      {
-                        "As Squirtie grew older, he joined the notorious Squirtle Squad, a group of brave noblemons dedicated to protecting the shores of their homeland. Together, they faced countless challenges and adversaries, forging bonds of friendship that would withstand the test of time."
-                      }
-                    </div>
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__pBwF)}
-                      displayHeight={"300px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"300px"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/squirt/images/squirtieSquadgif.gif",
-                        fullWidth: 880,
-                        fullHeight: 880,
-                        aspectRatio: undefined
-                      }}
-                    />
-                  </Stack__>
-                </Reveal>
-              </div>
-            </Stack__>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__tsqnc)}
-            >
-              <div className={classNames(projectcss.all, sty.column__aegmq)}>
-                <Reveal
-                  cascade={false}
-                  className={classNames("__wab_instance", sty.reveal__h5Iwn)}
-                  direction={"left"}
-                  effect={"fade"}
-                  triggerOnce={true}
-                >
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox___2Aj6R)}
-                  >
-                    <PlasmicImg__
-                      alt={""}
-                      className={classNames(sty.img__mkX1V)}
-                      displayHeight={"300px"}
-                      displayMaxHeight={"none"}
-                      displayMaxWidth={"300px"}
-                      displayMinHeight={"0"}
-                      displayMinWidth={"0"}
-                      displayWidth={"auto"}
-                      loading={"lazy"}
-                      src={{
-                        src: "/plasmic/squirt/images/squirtieFarewellgif.gif",
-                        fullWidth: 880,
-                        fullHeight: 880,
-                        aspectRatio: undefined
-                      }}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__dMJpk
-                      )}
-                    >
-                      {
-                        "But as the tides of destiny shifted, Squirtie felt a new calling stirring within his heart. Hearing the cries of memelovers across the Blockchain, who were falling victim to rug pulls and scams, Squirtie knew that his journey was far from over. With a heavy heart and a determined spirit, Squirtie bid farewell to his beloved Squad and set out on a new quest."
-                      }
-                    </div>
-                  </Stack__>
-                </Reveal>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__tAkKf)} />
-            </Stack__>
-          </section>
-          <section className={classNames(projectcss.all, sty.section___8MtIi)}>
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns__gZHnv)}
-            >
-              <div className={classNames(projectcss.all, sty.column__bucQ2)}>
-                <Reveal
-                  className={classNames("__wab_instance", sty.reveal__vgYfc)}
-                  direction={"left"}
-                  triggerOnce={true}
+              <Reveal
+                cascade={true}
+                className={classNames("__wab_instance", sty.reveal__y0CgX)}
+                direction={"up"}
+                triggerOnce={true}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox___2NbW)}
                 >
                   <PlasmicImg__
                     alt={""}
-                    className={classNames(sty.img__aDcu)}
-                    displayHeight={"auto"}
+                    className={classNames(sty.img__clc1T)}
+                    displayHeight={"300px"}
                     displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
+                    displayMaxWidth={"300px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/squirt/images/squirtieHatchgif.gif",
+                      fullWidth: 880,
+                      fullHeight: 880,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__i3YQe
+                    )}
+                  >
+                    {
+                      "Legend has it that Squirtie was born under a brilliant star, destined for greatness from the moment he emerged from his eggshell. Raised among the gentle waves of the Cerulean Sea, Squirtie was quickly recognized for his indomitable spirit and adventurous nature."
+                    }
+                  </div>
+                </Stack__>
+              </Reveal>
+              <Reveal
+                cascade={true}
+                className={classNames("__wab_instance", sty.reveal__j33Xp)}
+                direction={"up"}
+                triggerOnce={true}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__uz1A)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__zagMi
+                    )}
+                  >
+                    {
+                      "As Squirtie grew older, he joined the notorious Squirtle Squad, a group of brave noblemons dedicated to protecting the shores of their homeland. Together, they faced countless challenges and adversaries, forging bonds of friendship that would withstand the test of time."
+                    }
+                  </div>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__hbFjA)}
+                    displayHeight={"300px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"300px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/squirt/images/squirtieSquadgif.gif",
+                      fullWidth: 880,
+                      fullHeight: 880,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </Stack__>
+              </Reveal>
+              <Reveal
+                cascade={true}
+                className={classNames("__wab_instance", sty.reveal__eUmrw)}
+                direction={"up"}
+                triggerOnce={true}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__voe6H)}
+                >
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__sNgLy)}
+                    displayHeight={"300px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"300px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/squirt/images/squirtieFarewellgif.gif",
+                      fullWidth: 880,
+                      fullHeight: 880,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___21EyG
+                    )}
+                  >
+                    {
+                      "But as the tides of destiny shifted, Squirtie felt a new calling stirring within his heart. Hearing the cries of memelovers across the Blockchain, who were falling victim to rug pulls and scams, Squirtie knew that his journey was far from over. With a heavy heart and a determined spirit, Squirtie bid farewell to his beloved Squad and set out on a new quest."
+                    }
+                  </div>
+                </Stack__>
+              </Reveal>
+              <Reveal
+                cascade={true}
+                className={classNames("__wab_instance", sty.reveal__mTxpT)}
+                direction={"up"}
+                triggerOnce={true}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.freeBox__v04Yy)}
+                >
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text___48LuC
+                    )}
+                  >
+                    {
+                      "But as the tides of destiny shifted, Squirtie felt a new calling stirring within his heart. Hearing the cries of memelovers across the Blockchain, who were falling victim to rug pulls and scams, Squirtie knew that his journey was far from over. With a heavy heart and a determined spirit, Squirtie bid farewell to his beloved Squad and set out on a new quest."
+                    }
+                  </div>
+                  <PlasmicImg__
+                    alt={""}
+                    className={classNames(sty.img__zCfy5)}
+                    displayHeight={"300px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"300px"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
                     displayWidth={"auto"}
@@ -388,37 +374,16 @@ function PlasmicHomepage__RenderFunc(props: {
                       aspectRatio: undefined
                     }}
                   />
-                </Reveal>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__uvTxX)}>
-                <Reveal
-                  cascade={false}
-                  className={classNames("__wab_instance", sty.reveal__bFi46)}
-                  direction={"right"}
-                  effect={"fade"}
-                  triggerOnce={true}
-                >
-                  <div
-                    className={classNames(projectcss.all, sty.freeBox__iRMov)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__oSej5
-                      )}
-                    >
-                      {
-                        "Now, Squirtie roams the digital expanse of the BASE Blockchain, his shell gleaming with purpose as he seeks to lead the charge against fraud and deception. With every scam uncovered and every rug pull thwarted, Squirtie restores a glimmer of hope to memelovers seeking to ride the waves of real gains. Join us on this noble quest as Squirtie stands as the Guardian of the BASE Blockchain, championing honesty and fair play for all!"
-                      }
-                    </div>
-                  </div>
-                </Reveal>
-              </div>
+                </Stack__>
+              </Reveal>
             </Stack__>
           </section>
           <section className={classNames(projectcss.all, sty.section___0Nf4X)}>
-            <div className={classNames(projectcss.all, sty.columns__mrR6Q)}>
+            <div
+              data-plasmic-name={"columns"}
+              data-plasmic-override={overrides.columns}
+              className={classNames(projectcss.all, sty.columns)}
+            >
               <div className={classNames(projectcss.all, sty.column__qAb7Z)}>
                 <PlasmicImg__
                   alt={""}
@@ -463,8 +428,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "h1", "h3"],
+  root: ["root", "h1", "columns", "h3"],
   h1: ["h1"],
+  columns: ["columns", "h3"],
   h3: ["h3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -473,6 +439,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   h1: "h1";
+  columns: "div";
   h3: "h3";
 };
 
@@ -537,6 +504,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     h1: makeNodeComponent("h1"),
+    columns: makeNodeComponent("columns"),
     h3: makeNodeComponent("h3"),
 
     // Metadata about props expected for PlasmicHomepage
