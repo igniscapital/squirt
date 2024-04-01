@@ -73,7 +73,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .link__u1N65 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .link__tijwA {
@@ -100,6 +100,11 @@
   position: relative;
   color: #ffffff;
   font-size: 24px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .link___3Azey {
+    font-size: 18px;
+  }
 }
 .section__d7N70 {
   display: grid;
