@@ -75,6 +75,8 @@
 @font-face {
   font-family: 'upheavtt';
   src: url('https://site-assets.plasmic.app/2d6cbf09dd8de35e87023982d4501027.ttf');
+  font-family: 'pixellari';
+  src: url('https://site-assets.plasmic.app/496f5330d2c390d6487c296d2c550426.ttf');
 }
 * {
   box-sizing: border-box;
