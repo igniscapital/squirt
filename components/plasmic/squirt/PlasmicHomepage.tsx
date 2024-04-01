@@ -714,7 +714,11 @@ function PlasmicHomepage__RenderFunc(props: {
             <PlasmicImg__
               alt={""}
               className={classNames(sty.img__x4LB)}
-              displayHeight={"auto"}
+              displayHeight={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "auto"
+                  : "auto"
+              }
               displayMaxHeight={"none"}
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
@@ -728,8 +732,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 aspectRatio: undefined
               }}
             />
-          </section>
-          <section className={classNames(projectcss.all, sty.section__eqDjH)}>
+
             <Stack__
               as={"div"}
               hasGap={true}
