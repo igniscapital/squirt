@@ -603,6 +603,28 @@ function PlasmicHomepage__RenderFunc(props: {
             className={classNames(projectcss.all, sty.section___8LqUt)}
             id={"roadmap"}
           >
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__x4LB)}
+              displayHeight={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "auto"
+                  : "100%"
+              }
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"100%"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/squirt/images/websiteWreckagegif.gif",
+                fullWidth: 3840,
+                fullHeight: 2600,
+                aspectRatio: undefined
+              }}
+            />
+
             <div className={classNames(projectcss.all, sty.freeBox__mpW)}>
               <PlasmicImg__
                 alt={""}
@@ -711,28 +733,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 />
               </div>
             </div>
-            <PlasmicImg__
-              alt={""}
-              className={classNames(sty.img__x4LB)}
-              displayHeight={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "auto"
-                  : "100%"
-              }
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"100%"}
-              loading={"lazy"}
-              src={{
-                src: "/plasmic/squirt/images/websiteWreckagegif.gif",
-                fullWidth: 3840,
-                fullHeight: 2600,
-                aspectRatio: undefined
-              }}
-            />
-
             <Stack__
               as={"div"}
               hasGap={true}
