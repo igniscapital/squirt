@@ -828,6 +828,8 @@
   background: none;
   padding-top: 92px;
   padding-bottom: 24px;
+  overflow: visible;
+  z-index: 3;
   grid-column-start: 1 !important;
   grid-column-end: -1 !important;
   grid-template-columns:

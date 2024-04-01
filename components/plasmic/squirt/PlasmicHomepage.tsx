@@ -279,7 +279,7 @@ function PlasmicHomepage__RenderFunc(props: {
               />
 
               <PlasmicImg__
-                alt={""}
+                alt={"the legend of Squirtie"}
                 className={classNames(sty.img__xe6Vl)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
@@ -618,7 +618,7 @@ function PlasmicHomepage__RenderFunc(props: {
               displayWidth={"100%"}
               loading={"lazy"}
               src={{
-                src: "/plasmic/squirt/images/websiteWreckagegif.gif",
+                src: "/plasmic/squirt/images/websiteWreckage1Gif.gif",
                 fullWidth: 3840,
                 fullHeight: 2600,
                 aspectRatio: undefined
@@ -658,7 +658,7 @@ function PlasmicHomepage__RenderFunc(props: {
             <div className={classNames(projectcss.all, sty.freeBox__yrv0A)}>
               <div className={classNames(projectcss.all, sty.freeBox__kdiq6)}>
                 <PlasmicImg__
-                  alt={""}
+                  alt={"presale"}
                   className={classNames(sty.img__jvf96)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
@@ -677,7 +677,7 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
               <div className={classNames(projectcss.all, sty.freeBox___5G8Gu)}>
                 <PlasmicImg__
-                  alt={""}
+                  alt={"launch"}
                   className={classNames(sty.img__pkc9B)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
@@ -696,7 +696,7 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__n08Oq)}>
                 <PlasmicImg__
-                  alt={""}
+                  alt={"cex"}
                   className={classNames(sty.img___8ErXk)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
@@ -715,7 +715,7 @@ function PlasmicHomepage__RenderFunc(props: {
               </div>
               <div className={classNames(projectcss.all, sty.freeBox__wk4FP)}>
                 <PlasmicImg__
-                  alt={""}
+                  alt={"marketing"}
                   className={classNames(sty.img__syQS)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
