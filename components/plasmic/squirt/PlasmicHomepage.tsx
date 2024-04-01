@@ -244,6 +244,42 @@ function PlasmicHomepage__RenderFunc(props: {
             <div className={classNames(projectcss.all, sty.freeBox__xNJcW)}>
               <PlasmicImg__
                 alt={""}
+                className={classNames(sty.img__lPcmO)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"400px"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/squirt/images/websiteCloudpng.png",
+                  fullWidth: 1350,
+                  fullHeight: 290,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img___2Eik9)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"400px"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/squirt/images/websiteCloudpng.png",
+                  fullWidth: 1350,
+                  fullHeight: 290,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <PlasmicImg__
+                alt={""}
                 className={classNames(sty.img__xe6Vl)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
@@ -675,6 +711,23 @@ function PlasmicHomepage__RenderFunc(props: {
                 />
               </div>
             </div>
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__x4LB)}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"100%"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/squirt/images/websiteWreckagegif.gif",
+                fullWidth: 3840,
+                fullHeight: 2600,
+                aspectRatio: undefined
+              }}
+            />
           </section>
           <section className={classNames(projectcss.all, sty.section__eqDjH)}>
             <Stack__

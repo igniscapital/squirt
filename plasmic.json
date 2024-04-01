@@ -177,6 +177,16 @@
           "id": "su2x4CEmNOIV",
           "name": "squirtie_surfing.gif",
           "filePath": "../public/plasmic/squirt/images/squirtieSurfinggif.gif"
+        },
+        {
+          "id": "bxsWv6OVKjCk",
+          "name": "website_wreckage.gif",
+          "filePath": "../public/plasmic/squirt/images/websiteWreckagegif.gif"
+        },
+        {
+          "id": "zlGN_m96qP4t",
+          "name": "website_cloud.png",
+          "filePath": "../public/plasmic/squirt/images/websiteCloudpng.png"
         }
       ],
       "indirect": false,
