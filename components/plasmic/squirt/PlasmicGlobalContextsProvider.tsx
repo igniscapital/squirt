@@ -26,7 +26,7 @@ export default function GlobalContextsProvider(
       css={
         embedCssProps && "css" in embedCssProps
           ? embedCssProps.css!
-          : "/* CSS snippet */\n@font-face {\n  font-family: 'upheavtt';\n  src: url('https://site-assets.plasmic.app/2d6cbf09dd8de35e87023982d4501027.ttf');\n}"
+          : "/* CSS snippet */\n@font-face {\n  font-family: 'upheavt';\n  src: url('https://site-assets.plasmic.app/2d6cbf09dd8de35e87023982d4501027.ttf');\n  font-family: 'pixellari';\n  src: url('https://site-assets.plasmic.app/496f5330d2c390d6487c296d2c550426.ttf');\n}"
       }
     >
       {children}

@@ -153,6 +153,7 @@
   margin-top: 24px;
   margin-bottom: 24px;
   font-size: 42px;
+  font-family: "upheavtt";
   min-width: 0;
 }
 .section___7Fs1A {
@@ -294,6 +295,7 @@
   text-align: left;
   font-size: 24px;
   color: #ffffff;
+  font-family: "pixellari";
   min-width: 0;
 }
 .reveal__j33Xp:global(.__wab_instance) {
@@ -368,6 +370,7 @@
   text-align: right;
   font-size: 24px;
   color: #ffffff;
+  font-family: "pixellari";
   min-width: 0;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -464,6 +467,7 @@
   text-align: left;
   font-size: 24px;
   color: #ffffff;
+  font-family: "pixellari";
   min-width: 0;
 }
 .reveal__mTxpT:global(.__wab_instance) {
@@ -538,6 +542,7 @@
   text-align: right;
   font-size: 24px;
   color: #ffffff;
+  font-family: "pixellari";
   min-width: 0;
 }
 .img__zCfy5 {
@@ -577,14 +582,37 @@
     grid-column: 4;
   }
 }
-.h2___8GXZb {
+.freeBox__mGIlO {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.h2__otgty {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 100%;
   color: #ffffff;
   text-align: center;
+  z-index: 2;
   min-width: 0;
+}
+.img__m53M {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.img__m53M > picture > img {
+  object-fit: cover;
 }
 .columns__mrR6Q {
   --plsmc-rc-col-gap: 0px;
@@ -673,6 +701,7 @@
   height: auto;
   max-width: 100%;
   color: #ffffff;
+  font-family: "pixellari";
   min-width: 0;
 }
 .section___8LqUt {
@@ -704,7 +733,29 @@
     grid-column: 4;
   }
 }
-.h2__v5Bav {
+.freeBox__mpW {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.img__yszi4 {
+  position: absolute;
+  object-fit: cover;
+  max-width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.img__yszi4 > picture > img {
+  object-fit: cover;
+}
+.h2__vhtUx {
   position: relative;
   width: 100%;
   height: auto;

@@ -137,6 +137,11 @@
           "id": "F3sBzkL9zc9E",
           "name": "squirtie_coin_transparent.png",
           "filePath": "../public/plasmic/squirt/images/squirtieCoinTransparentpng.png"
+        },
+        {
+          "id": "KEFLNoFAXV9q",
+          "name": "website_separator.png",
+          "filePath": "../public/plasmic/squirt/images/websiteSeparatorpng.png"
         }
       ],
       "indirect": false,

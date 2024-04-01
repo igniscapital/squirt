@@ -198,7 +198,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 sty.link___3Azey
               )}
               component={Link}
-              href={"roadmap"}
+              href={"#roadmap"}
               platform={"nextjs"}
             >
               {"Roadmap"}
@@ -439,16 +439,35 @@ function PlasmicHomepage__RenderFunc(props: {
             className={classNames(projectcss.all, sty.section___0Nf4X)}
             id={"tokenomics"}
           >
-            <h2
-              className={classNames(
-                projectcss.all,
-                projectcss.h2,
-                projectcss.__wab_text,
-                sty.h2___8GXZb
-              )}
-            >
-              {"TOKENOMICS"}
-            </h2>
+            <div className={classNames(projectcss.all, sty.freeBox__mGIlO)}>
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__otgty
+                )}
+              >
+                {"TOKENOMICS"}
+              </h2>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__m53M)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/squirt/images/websiteSeparatorpng.png",
+                  fullWidth: 1024,
+                  fullHeight: 88,
+                  aspectRatio: undefined
+                }}
+              />
+            </div>
             <div className={classNames(projectcss.all, sty.columns__mrR6Q)}>
               <div className={classNames(projectcss.all, sty.column__qAb7Z)}>
                 <PlasmicImg__
@@ -501,16 +520,36 @@ function PlasmicHomepage__RenderFunc(props: {
             className={classNames(projectcss.all, sty.section___8LqUt)}
             id={"roadmap"}
           >
-            <h2
-              className={classNames(
-                projectcss.all,
-                projectcss.h2,
-                projectcss.__wab_text,
-                sty.h2__v5Bav
-              )}
-            >
-              {"Roadmap"}
-            </h2>
+            <div className={classNames(projectcss.all, sty.freeBox__mpW)}>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__yszi4)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/squirt/images/websiteSeparatorpng.png",
+                  fullWidth: 1024,
+                  fullHeight: 88,
+                  aspectRatio: undefined
+                }}
+              />
+
+              <h2
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h2,
+                  projectcss.__wab_text,
+                  sty.h2__vhtUx
+                )}
+              >
+                {"Roadmap"}
+              </h2>
+            </div>
             <div className={classNames(projectcss.all, sty.columns__xkc5V)}>
               <div className={classNames(projectcss.all, sty.column__eeecV)} />
             </div>
