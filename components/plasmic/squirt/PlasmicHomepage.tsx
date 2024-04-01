@@ -468,17 +468,29 @@ function PlasmicHomepage__RenderFunc(props: {
                 }}
               />
             </div>
-            <div className={classNames(projectcss.all, sty.columns__mrR6Q)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.columns__mrR6Q)}
+            >
               <div className={classNames(projectcss.all, sty.column__qAb7Z)}>
                 <PlasmicImg__
                   alt={""}
                   className={classNames(sty.img__rcoW9)}
-                  displayHeight={"400px"}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "300px"
+                      : "300px"
+                  }
                   displayMaxHeight={"none"}
                   displayMaxWidth={"100%"}
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
-                  displayWidth={"400px"}
+                  displayWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "300px"
+                      : "300px"
+                  }
                   loading={"lazy"}
                   src={{
                     src: "/plasmic/squirt/images/squirtieCoinTransparentpng.png",
@@ -510,11 +522,11 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {
-                    "0% Tax. \n45% LP\n45% Airdrop \n10% Marketing/KOL/CEX \n\nCONTRACT ADDRESS :\n0x8123u9ie8uwqe09qwe908q098ewq09we\n"
+                    "0% Tax. \n45% LP\n45% Airdrop \n10% Marketing/KOL/CEX \n\nCONTRACT ADDRESS :\n0x8123u9ie8uwqe09qw\ne908q098ewq09we\n"
                   }
                 </h3>
               </div>
-            </div>
+            </Stack__>
           </section>
           <section
             className={classNames(projectcss.all, sty.section___8LqUt)}

@@ -620,26 +620,41 @@
   object-fit: cover;
 }
 .columns__mrR6Q {
-  --plsmc-rc-col-gap: 0px;
-}
-.columns__mrR6Q {
   display: flex;
   position: relative;
-  width: 100%;
+  width: auto;
   height: auto;
-  align-items: stretch;
   flex-shrink: 1;
   max-width: 100%;
   flex-direction: row;
-  flex-wrap: nowrap;
-  grid-column-start: 1 !important;
-  grid-column-end: -1 !important;
-  padding: 0px 24px;
+  justify-self: flex-start;
+  padding: 42px 24px 0px;
 }
-.columns__mrR6Q > :nth-child(2n + 1) {
+.columns__mrR6Q > :global(.__wab_flex-container) {
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: calc(0px - 24px);
+  width: calc(100% + 24px);
+  --plsmc-rc-col-gap: 24px;
+}
+.columns__mrR6Q > :global(.__wab_flex-container) > *,
+.columns__mrR6Q > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.columns__mrR6Q > :global(.__wab_flex-container) > picture > img,
+.columns__mrR6Q
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 24px;
+}
+.columns__mrR6Q {
+  --plsmc-rc-col-gap: 0px;
+}
+.columns__mrR6Q > :global(.__wab_flex-container) > :nth-child(2n + 1) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
-.columns__mrR6Q > :nth-child(2n + 2) {
+.columns__mrR6Q > :global(.__wab_flex-container) > :nth-child(2n + 2) {
   width: calc((100% - 2 * var(--plsmc-rc-col-gap, 0px)) * 6 / 12);
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -647,12 +662,18 @@
     width: 100%;
     height: auto;
     flex-direction: row;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .columns__mrR6Q > :global(.__wab_flex-container) {
+    flex-direction: row;
     flex-wrap: wrap;
     min-width: 0;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .columns__mrR6Q > :nth-child(1n + 1) {
+  .columns__mrR6Q > :global(.__wab_flex-container) > :nth-child(1n + 1) {
     width: calc((100% - 1 * var(--plsmc-rc-col-gap, 0px)) * 12 / 12);
   }
 }
@@ -672,12 +693,19 @@
   position: relative;
   object-fit: cover;
   max-width: 100%;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   flex-shrink: 0;
 }
 .img__rcoW9 > picture > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__rcoW9 {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+  }
 }
 .column__shN8Y {
   display: flex;
