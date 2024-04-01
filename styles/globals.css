@@ -72,7 +72,10 @@
     --card-border-rgb: 200, 200, 200;
   }
 }
-
+@font-face {
+  font-family: 'upheavtt';
+  src: url('https://site-assets.plasmic.app/2d6cbf09dd8de35e87023982d4501027.ttf');
+}
 * {
   box-sizing: border-box;
   padding: 0;
