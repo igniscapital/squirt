@@ -606,7 +606,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   )}
                 >
                   {
-                    "0% Tax. \n45% LP\n45% Airdrop \n10% Marketing/KOL/CEX \n\nCONTRACT ADDRESS :\n"
+                    "0% Tax.\n50% LP\n50%Distribution/development\nCONTRACT ADDRESS :"
                   }
                 </h3>
               </div>
