@@ -710,6 +710,7 @@ function PlasmicHomepage__RenderFunc(props: {
                   sty.link__sc15F
                 )}
                 component={Link}
+                href={"https://t.me/squirtiebase"}
                 platform={"nextjs"}
               >
                 <PlasmicImg__
