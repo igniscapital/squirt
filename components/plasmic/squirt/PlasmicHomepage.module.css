@@ -278,7 +278,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__xNJcW {
-    height: 600px;
+    height: 500px;
   }
 }
 .img__xe6Vl {
@@ -288,6 +288,11 @@
 }
 .img__xe6Vl > picture > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__xe6Vl {
+    margin-bottom: 24px;
+  }
 }
 .freeBox__uZwjx {
   display: flex;
