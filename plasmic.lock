@@ -20,8 +20,7 @@
       "dependencies": {
         "58GpZjZCWTaJ8AUhpCwt2K": "3.23.0",
         "8PtdGodUbexNYgkuyBUcWu": "3.22.0",
-        "caTPwKxj5ZrD9LQ7DMdK4Z": "3.34.0",
-        "84wxoth5npGrp6RRXPL88z": "4.25.0"
+        "caTPwKxj5ZrD9LQ7DMdK4Z": "3.34.0"
       },
       "lang": "ts",
       "fileLocks": [
@@ -33,12 +32,12 @@
         {
           "type": "renderModule",
           "assetId": "jwLRJNHElz9W",
-          "checksum": "6a1a373e645c00d797d74df52cb015d4"
+          "checksum": "a126cdd15842c2a9e167474e66c92fec"
         },
         {
           "type": "cssRules",
           "assetId": "jwLRJNHElz9W",
-          "checksum": "6a1a373e645c00d797d74df52cb015d4"
+          "checksum": "a126cdd15842c2a9e167474e66c92fec"
         },
         {
           "type": "image",
@@ -82,7 +81,7 @@
         },
         {
           "assetId": "kCvp2jQnHcq5LJ8txx1Rx8",
-          "checksum": "aeaa45c12fe4d8541081bab2e110e18d",
+          "checksum": "05ffceb84975cf215c5123f94970cc66",
           "type": "globalContexts"
         },
         {
