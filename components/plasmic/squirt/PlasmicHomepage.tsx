@@ -315,12 +315,20 @@ function PlasmicHomepage__RenderFunc(props: {
                   <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__clc1T)}
-                    displayHeight={"300px"}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "300px"
+                    }
                     displayMaxHeight={"none"}
                     displayMaxWidth={"300px"}
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"auto"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "auto"
+                    }
                     loading={"lazy"}
                     src={{
                       src: "/plasmic/squirt/images/squirtieHatchgif.gif",
@@ -368,12 +376,24 @@ function PlasmicHomepage__RenderFunc(props: {
                   <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__hbFjA)}
-                    displayHeight={"300px"}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "300px"
+                    }
                     displayMaxHeight={"none"}
-                    displayMaxWidth={"300px"}
+                    displayMaxWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "300px"
+                    }
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"auto"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "auto"
+                    }
                     loading={"lazy"}
                     src={{
                       src: "/plasmic/squirt/images/squirtieSquadgif.gif",
@@ -398,12 +418,24 @@ function PlasmicHomepage__RenderFunc(props: {
                   <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__sNgLy)}
-                    displayHeight={"300px"}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "300px"
+                    }
                     displayMaxHeight={"none"}
-                    displayMaxWidth={"300px"}
+                    displayMaxWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "300px"
+                    }
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"auto"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "auto"
+                    }
                     loading={"lazy"}
                     src={{
                       src: "/plasmic/squirt/images/squirtieFarewellgif.gif",
@@ -451,12 +483,24 @@ function PlasmicHomepage__RenderFunc(props: {
                   <PlasmicImg__
                     alt={""}
                     className={classNames(sty.img__zCfy5)}
-                    displayHeight={"300px"}
+                    displayHeight={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "300px"
+                    }
                     displayMaxHeight={"none"}
-                    displayMaxWidth={"300px"}
+                    displayMaxWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "auto"
+                        : "300px"
+                    }
                     displayMinHeight={"0"}
                     displayMinWidth={"0"}
-                    displayWidth={"auto"}
+                    displayWidth={
+                      hasVariant(globalVariants, "screen", "mobileOnly")
+                        ? "100%"
+                        : "auto"
+                    }
                     loading={"lazy"}
                     src={{
                       src: "/plasmic/squirt/images/squirtieSurfgif.gif",
@@ -515,16 +559,20 @@ function PlasmicHomepage__RenderFunc(props: {
                   className={classNames(sty.img__rcoW9)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "300px"
+                      ? "auto"
                       : "300px"
                   }
                   displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
+                  displayMaxWidth={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "auto"
+                      : "100%"
+                  }
                   displayMinHeight={"0"}
                   displayMinWidth={"0"}
                   displayWidth={
                     hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? "300px"
+                      ? "auto"
                       : "300px"
                   }
                   loading={"lazy"}

@@ -63,7 +63,33 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__dRitx {
-    background: url("/plasmic/squirt/images/websiteHeader1Png.png") 0% 0% / cover;
+    background: #1d3394;
+    width: 100%;
+    grid-column-start: 1 !important;
+    grid-column-end: -1 !important;
+    border-top: 5px solid #18276b;
+    border-bottom: 5px solid #18276b;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__dRitx > :global(.__wab_flex-container) {
+    margin-left: calc(0px - 12px);
+    width: calc(100% + 12px);
+    margin-top: calc(0px - 0px);
+    height: calc(100% + 0px);
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__dRitx > :global(.__wab_flex-container) > *,
+  .freeBox__dRitx > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+  .freeBox__dRitx > :global(.__wab_flex-container) > picture > img,
+  .freeBox__dRitx
+    > :global(.__wab_flex-container)
+    > :global(.__wab_slot)
+    > picture
+    > img {
+    margin-left: 12px;
+    margin-top: 0px;
   }
 }
 .link__u1N65 {
@@ -73,7 +99,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .link__u1N65 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .link__tijwA {
@@ -83,7 +109,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .link__tijwA {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .link___0Jk6A {
@@ -93,7 +119,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .link___0Jk6A {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .link___3Azey {
@@ -103,7 +129,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .link___3Azey {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 .section__d7N70 {
@@ -130,7 +156,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .section__d7N70 {
-    height: 800px;
+    height: 600px;
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -181,7 +207,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .freeBox__xNJcW {
-    height: 760px;
+    height: 600px;
   }
 }
 .img__xe6Vl {
@@ -235,7 +261,7 @@
 @media (min-width: 0px) and (max-width: 768px) {
   .img__wSjXo {
     margin-right: 0px;
-    margin-top: 200px;
+    margin-top: 0px;
   }
 }
 .section___7Fs1A {
@@ -370,6 +396,13 @@
 .img__clc1T > picture > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__clc1T {
+    width: 100%;
+    height: auto;
+    min-width: 0;
+  }
+}
 .text__i3YQe {
   width: 100%;
   height: auto;
@@ -469,6 +502,14 @@
 .img__hbFjA > picture > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__hbFjA {
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    min-width: 0;
+  }
+}
 .reveal__eUmrw:global(.__wab_instance) {
   max-width: 100%;
   object-fit: cover;
@@ -541,6 +582,14 @@
 }
 .img__sNgLy > picture > img {
   object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__sNgLy {
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    min-width: 0;
+  }
 }
 .text___21EyG {
   width: 100%;
@@ -640,6 +689,14 @@
 .img__zCfy5 > picture > img {
   object-fit: cover;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__zCfy5 {
+    width: 100%;
+    max-width: auto;
+    height: auto;
+    min-width: 0;
+  }
+}
 .section___0Nf4X {
   display: grid;
   position: relative;
@@ -693,7 +750,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h2__otgty {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 .img__m53M {
@@ -789,9 +846,9 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .img__rcoW9 {
-    width: 300px;
-    height: 300px;
-    flex-shrink: 0;
+    width: auto;
+    height: auto;
+    max-width: auto;
   }
 }
 .column__shN8Y {
@@ -815,6 +872,11 @@
   letter-spacing: 5px;
   min-width: 0;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .h2__u4MsN {
+    font-size: 32px;
+  }
+}
 .h3 {
   position: relative;
   width: 100%;
@@ -823,6 +885,11 @@
   color: #ffffff;
   font-family: "pixellari";
   min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .h3 {
+    font-size: 24px;
+  }
 }
 .section___8LqUt {
   display: grid;
@@ -912,7 +979,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .h2__vhtUx {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 .freeBox__yrv0A {
