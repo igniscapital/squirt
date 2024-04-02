@@ -60,7 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { PlasmicHead } from "@plasmicapp/react-web";
-import { Embed } from "@plasmicpkgs/plasmic-basic-components";
+import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 
 import { useScreenVariants as useScreenVariantswcgr3SdHclm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _WCGR3sdHclm/globalVariant
@@ -84,7 +84,7 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   pageMetadataOverride?: Flex__<typeof PlasmicHead>;
-  embedHtml?: Flex__<typeof Embed>;
+  scrollParallax?: Flex__<typeof ParallaxWrapper>;
   columns?: Flex__<"div">;
   h3?: Flex__<"h3">;
 };
@@ -162,68 +162,68 @@ function PlasmicHomepage__RenderFunc(props: {
             title={"SquirtieBASE"}
           />
 
-          <Stack__
-            as={"div"}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__dRitx)}
-          >
-            <PlasmicLink__
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__u1N65
-              )}
-              component={Link}
-              href={"https://www.plasmic.app/"}
-              platform={"nextjs"}
-            >
-              {"Home"}
-            </PlasmicLink__>
-            <PlasmicLink__
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link__tijwA
-              )}
-              component={Link}
-              href={"#lore"}
-              platform={"nextjs"}
-            >
-              {"Lore"}
-            </PlasmicLink__>
-            <PlasmicLink__
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link___0Jk6A
-              )}
-              component={Link}
-              href={"#tokenomics"}
-              platform={"nextjs"}
-            >
-              {"Tokenomics"}
-            </PlasmicLink__>
-            <PlasmicLink__
-              className={classNames(
-                projectcss.all,
-                projectcss.a,
-                projectcss.__wab_text,
-                sty.link___3Azey
-              )}
-              component={Link}
-              href={"#roadmap"}
-              platform={"nextjs"}
-            >
-              {"Roadmap"}
-            </PlasmicLink__>
-          </Stack__>
           <section className={classNames(projectcss.all, sty.section__d7N70)}>
+            <Stack__
+              as={"div"}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.freeBox__yJpok)}
+            >
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__neLll
+                )}
+                component={Link}
+                href={"https://www.plasmic.app/"}
+                platform={"nextjs"}
+              >
+                {"Home"}
+              </PlasmicLink__>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link___24El0
+                )}
+                component={Link}
+                href={"#lore"}
+                platform={"nextjs"}
+              >
+                {"Lore"}
+              </PlasmicLink__>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__dIosD
+                )}
+                component={Link}
+                href={"#tokenomics"}
+                platform={"nextjs"}
+              >
+                {"Tokenomics"}
+              </PlasmicLink__>
+              <PlasmicLink__
+                className={classNames(
+                  projectcss.all,
+                  projectcss.a,
+                  projectcss.__wab_text,
+                  sty.link__ayjl1
+                )}
+                component={Link}
+                href={"#roadmap"}
+                platform={"nextjs"}
+              >
+                {"Roadmap"}
+              </PlasmicLink__>
+            </Stack__>
             <PlasmicImg__
               alt={""}
-              className={classNames(sty.img__hRr9X)}
+              className={classNames(sty.img__pRtvK)}
               displayHeight={
                 hasVariant(globalVariants, "screen", "mobileOnly")
                   ? "auto"
@@ -236,9 +236,58 @@ function PlasmicHomepage__RenderFunc(props: {
               displayWidth={"100%"}
               loading={"lazy"}
               src={{
-                src: "/plasmic/squirt/images/websiteBanner2Png.png",
-                fullWidth: 2240,
-                fullHeight: 1240,
+                src: "/plasmic/squirt/images/squirtieMainbannerSkypng.png",
+                fullWidth: 1920,
+                fullHeight: 1080,
+                aspectRatio: undefined
+              }}
+            />
+
+            <ParallaxWrapper
+              data-plasmic-name={"scrollParallax"}
+              data-plasmic-override={overrides.scrollParallax}
+              className={classNames("__wab_instance", sty.scrollParallax)}
+              previewInEditor={true}
+              speed={100}
+            >
+              <div className={classNames(projectcss.all, sty.freeBox__s0Etf)}>
+                <PlasmicImg__
+                  alt={""}
+                  className={classNames(sty.img__tnaAv)}
+                  displayHeight={"600px"}
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"600px"}
+                  loading={"lazy"}
+                  src={{
+                    src: "/plasmic/squirt/images/squirtieMainbannerSunpng.png",
+                    fullWidth: 1920,
+                    fullHeight: 1080,
+                    aspectRatio: undefined
+                  }}
+                />
+              </div>
+            </ParallaxWrapper>
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__xfsoA)}
+              displayHeight={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "auto"
+                  : "auto"
+              }
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"100%"}
+              loading={"lazy"}
+              src={{
+                src: "/plasmic/squirt/images/squirtieMainbannerpng.png",
+                fullWidth: 1920,
+                fullHeight: 1080,
                 aspectRatio: undefined
               }}
             />
@@ -255,20 +304,11 @@ function PlasmicHomepage__RenderFunc(props: {
                 displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
-                  src: "/plasmic/squirt/images/websiteTitlepng.png",
-                  fullWidth: 1320,
-                  fullHeight: 380,
+                  src: "/plasmic/squirt/images/websiteTitle1Png.png",
+                  fullWidth: 1880,
+                  fullHeight: 430,
                   aspectRatio: undefined
                 }}
-              />
-
-              <Embed
-                data-plasmic-name={"embedHtml"}
-                data-plasmic-override={overrides.embedHtml}
-                className={classNames("__wab_instance", sty.embedHtml)}
-                code={
-                  "<style>\n@supports (-webkit-text-stroke: 1px black) {\n  h1 {\n  font-size: 40px;\n  color: black;\n  -webkit-text-fill-color: black; /* Will override color (regardless of order) */\n  -webkit-text-stroke-width: 1px;\n  -webkit-text-stroke-color: white;\n}\n</style>\n<h1>Guardian of the BASE Blockchain</h1>"
-                }
               />
 
               <div className={classNames(projectcss.all, sty.freeBox__uZwjx)}>
@@ -818,9 +858,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "pageMetadataOverride", "embedHtml", "columns", "h3"],
+  root: ["root", "pageMetadataOverride", "scrollParallax", "columns", "h3"],
   pageMetadataOverride: ["pageMetadataOverride"],
-  embedHtml: ["embedHtml"],
+  scrollParallax: ["scrollParallax"],
   columns: ["columns", "h3"],
   h3: ["h3"]
 } as const;
@@ -830,7 +870,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
-  embedHtml: typeof Embed;
+  scrollParallax: typeof ParallaxWrapper;
   columns: "div";
   h3: "h3";
 };
@@ -896,7 +936,7 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
-    embedHtml: makeNodeComponent("embedHtml"),
+    scrollParallax: makeNodeComponent("scrollParallax"),
     columns: makeNodeComponent("columns"),
     h3: makeNodeComponent("h3"),
 

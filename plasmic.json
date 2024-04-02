@@ -202,6 +202,26 @@
           "id": "DDlr9BkRvDTM",
           "name": "website_banner2.png",
           "filePath": "../public/plasmic/squirt/images/websiteBanner2Png.png"
+        },
+        {
+          "id": "zrbeixWlkXiA",
+          "name": "website_title (1).png",
+          "filePath": "../public/plasmic/squirt/images/websiteTitle1Png.png"
+        },
+        {
+          "id": "y3CujCov0uWr",
+          "name": "squirtie_mainbanner.png",
+          "filePath": "../public/plasmic/squirt/images/squirtieMainbannerpng.png"
+        },
+        {
+          "id": "6zZEBhNaoqGz",
+          "name": "squirtie_mainbanner_sky.png",
+          "filePath": "../public/plasmic/squirt/images/squirtieMainbannerSkypng.png"
+        },
+        {
+          "id": "RIBzcS3F3Psh",
+          "name": "squirtie_mainbanner_sun.png",
+          "filePath": "../public/plasmic/squirt/images/squirtieMainbannerSunpng.png"
         }
       ],
       "indirect": false,
@@ -304,6 +324,34 @@
       ],
       "customFunctions": [],
       "jsBundleThemes": []
+    },
+    {
+      "projectId": "84wxoth5npGrp6RRXPL88z",
+      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
+      "projectName": "react-scroll-parallax-global",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.tsx",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "bozP4lLlAZ",
+          "name": "ParallaxWrapper",
+          "displayName": "hostless-scroll-parallax",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        },
+        {
+          "id": "L6MfauX2Cw",
+          "name": "ParallaxProviderWrapper",
+          "displayName": "global-parallax-provider",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        }
+      ],
+      "customFunctions": []
     }
   ],
   "globalVariants": {

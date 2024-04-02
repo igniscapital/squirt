@@ -14,6 +14,7 @@
     "@plasmicpkgs/plasmic-basic-components": "^0.0.210",
     "@plasmicpkgs/plasmic-embed-css": "^0.1.176",
     "@plasmicpkgs/react-awesome-reveal": "^3.8.192",
+    "@plasmicpkgs/react-scroll-parallax": "^0.0.198",
     "next": "14.1.4",
     "react": "^18",
     "react-dom": "^18"
