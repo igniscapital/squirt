@@ -7,18 +7,22 @@
 import * as React from "react";
 import { hasVariant, ensureGlobalVariants } from "@plasmicapp/react-web";
 import { EmbedCss } from "@plasmicpkgs/plasmic-embed-css";
+import { ParallaxProviderWrapper } from "@plasmicpkgs/react-scroll-parallax";
 
 export interface GlobalContextsProviderProps {
   children?: React.ReactElement;
   embedCssProps?: Partial<
     Omit<React.ComponentProps<typeof EmbedCss>, "children">
   >;
+  parallaxProviderWrapperProps?: Partial<
+    Omit<React.ComponentProps<typeof ParallaxProviderWrapper>, "children">
+  >;
 }
 
 export default function GlobalContextsProvider(
   props: GlobalContextsProviderProps
 ) {
-  const { children, embedCssProps } = props;
+  const { children, embedCssProps, parallaxProviderWrapperProps } = props;
 
   return (
     <EmbedCss
@@ -29,7 +33,17 @@ export default function GlobalContextsProvider(
           : "/* CSS snippet */\n@font-face {\n  font-family: 'upheavt';\n  src: url('https://site-assets.plasmic.app/2d6cbf09dd8de35e87023982d4501027.ttf');\n}\n@font-face {\n  font-family: 'pixellari';\n  src: url('https://site-assets.plasmic.app/496f5330d2c390d6487c296d2c550426.ttf');\n}"
       }
     >
-      {children}
+      <ParallaxProviderWrapper
+        {...parallaxProviderWrapperProps}
+        scrollAxis={
+          parallaxProviderWrapperProps &&
+          "scrollAxis" in parallaxProviderWrapperProps
+            ? parallaxProviderWrapperProps.scrollAxis!
+            : "vertical"
+        }
+      >
+        {children}
+      </ParallaxProviderWrapper>
     </EmbedCss>
   );
 }
