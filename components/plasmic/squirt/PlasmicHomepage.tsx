@@ -60,7 +60,6 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import { PlasmicHead } from "@plasmicapp/react-web";
-import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax";
 import { Reveal } from "@plasmicpkgs/react-awesome-reveal";
 
 import { useScreenVariants as useScreenVariantswcgr3SdHclm } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: _WCGR3sdHclm/globalVariant
@@ -85,7 +84,6 @@ export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   pageMetadataOverride?: Flex__<typeof PlasmicHead>;
   home?: Flex__<"section">;
-  scrollParallax?: Flex__<typeof ParallaxWrapper>;
   columns?: Flex__<"div">;
   h3?: Flex__<"h3">;
 };
@@ -248,30 +246,6 @@ function PlasmicHomepage__RenderFunc(props: {
               }}
             />
 
-            <ParallaxWrapper
-              data-plasmic-name={"scrollParallax"}
-              data-plasmic-override={overrides.scrollParallax}
-              className={classNames("__wab_instance", sty.scrollParallax)}
-              speed={100}
-            >
-              <PlasmicImg__
-                alt={""}
-                className={classNames(sty.img___64MNh)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"100%"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                loading={"lazy"}
-                src={{
-                  src: "/plasmic/squirt/images/squirtieMainbannerSunpng.png",
-                  fullWidth: 1920,
-                  fullHeight: 1080,
-                  aspectRatio: undefined
-                }}
-              />
-            </ParallaxWrapper>
             <PlasmicImg__
               alt={""}
               className={classNames(sty.img__xfsoA)}
@@ -860,17 +834,9 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "pageMetadataOverride",
-    "home",
-    "scrollParallax",
-    "columns",
-    "h3"
-  ],
+  root: ["root", "pageMetadataOverride", "home", "columns", "h3"],
   pageMetadataOverride: ["pageMetadataOverride"],
-  home: ["home", "scrollParallax"],
-  scrollParallax: ["scrollParallax"],
+  home: ["home"],
   columns: ["columns", "h3"],
   h3: ["h3"]
 } as const;
@@ -881,7 +847,6 @@ type NodeDefaultElementType = {
   root: "div";
   pageMetadataOverride: typeof PlasmicHead;
   home: "section";
-  scrollParallax: typeof ParallaxWrapper;
   columns: "div";
   h3: "h3";
 };
@@ -948,7 +913,6 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     pageMetadataOverride: makeNodeComponent("pageMetadataOverride"),
     home: makeNodeComponent("home"),
-    scrollParallax: makeNodeComponent("scrollParallax"),
     columns: makeNodeComponent("columns"),
     h3: makeNodeComponent("h3"),
 
